@@ -1,2 +1,3 @@
+import { Game } from './ts/engine';
 
-console.log('hi')
+Game.init();

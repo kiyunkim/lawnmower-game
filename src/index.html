@@ -1,11 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
 
-  <body>
-    <h1>testsdfsf</h1>
-  </body>
+<head>
+  <title>Lawnmower Game</title>
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+
+<body>
+  <h1 id="money">$0</h1>
+  <button id="mow">Mow</button>
+  <canvas id="canvas" width="500" height="500"></canvas>
+
+  <section id="tick-rate">
+    <h2 class="title">Tick Rate</h2>
+    <p class="description">The rate at which the game updates. The lower the number, the faster the game will update.</p>
+    <p class="value">1000ms</p>
+    <button class="upgrade">Upgrade</button>
+    <p class="owned">Owned: <span class="owned-value">0</span></p>
+  </section>
+
+  <section id="growth-rate">
+    <h2 class="title">Growth Rate</h2>
+    <p class="description">The rate at which the grass grows. The higher the number, the faster the grass will grow.</p>
+    <p class="value">4 tiles/tick</p>
+    <button class="upgrade">Upgrade</button>
+  </section>
+
+  <section id="machine-speed">
+    <h2 class="title">Machine Speed</h2>
+    <p class="description">The rate at which the lawnmower moves. The higher the number, the faster the lawnmower will move.</p>
+    <p class="value">1 tile/tick</p>
+    <button class="upgrade">Upgrade</button>
+  </section>
+
+  <section id="machine-size">
+    <h2 class="title">Machine Size</h2>
+    <p class="description">The size of the lawnmower. The higher the number, the more grass the lawnmower will cut.</p>
+    <p class="value">1x1</p>
+    <button class="upgrade">Upgrade</button>
+  </section>
+
+  <section id="tile-size">
+    <h2 class="title">Tile Size</h2>
+    <p class="description">The size of the grass tiles. The higher the number, the larger the grass tiles will be.</p>
+    <p class="value">20x20</p>
+    <button class="upgrade">Upgrade</button>
+  </section>
+
+  <section id="next-stage">
+    <h2 class="title">Unlock <span class="stage-name"></span></h2>
+    <p class="description">Unlock the <span class="stage-name"></span> for <span class="stage-cost"></span></p>
+    <button class="unlock">Unlock</button>
+  </section>
+
+  <section id="prestige">
+    <h2 class="title">Prestige</h2>
+    <p>Accumulated: <span class="value"></span></p>
+    <button class="prestige">Soft reset to get <span class="value"></span></button>
+  </section>
+
+</body>
+
 </html>
